@@ -144,7 +144,7 @@ void DIP::INI::readList(const wchar_t *key, std::vector<std::wstring> &target, T
 	if (transform == TRANSFORM_NONE) {
 		return;
 	}
-	for (int i = 0; i < target.size(); ++i) {
+	for (size_t i = 0; i < target.size(); ++i) {
 		std::wstring &item = target.at(i);
 		this->transform(item, transform);
 	}

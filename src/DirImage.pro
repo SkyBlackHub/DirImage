@@ -21,7 +21,8 @@ CONFIG += c++14
 CONFIG(release, debug|release) {
 	EXTRA_FILES += $$_PRO_FILE_PWD_/../runtime/$${TARGET}.ini \
 		$$_PRO_FILE_PWD_/../runtime/lgpl-3.0.txt \
-		$$_PRO_FILE_PWD_/../runtime/readme.ru.txt
+		$$_PRO_FILE_PWD_/../runtime/readme.ru.txt \
+		$$_PRO_FILE_PWD_/../runtime/readme.en.txt
 		
 	contains(QMAKE_TARGET.arch, x86_64) {
 		EXTRA_FILES += $$_PRO_FILE_PWD_/../vendors/FreeImage/x64/FreeImage.dll

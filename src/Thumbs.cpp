@@ -97,7 +97,7 @@ std::wstring DIP::Thumbs::filename(int index) const
 DIP::Image *DIP::Thumbs::image(int index) const
 {
 	index -= this->offset();
-	return (index >= 0 && index < m_images.size()) ? m_images.at(index) : nullptr;
+	return (index >= 0 && index < static_cast<int>(m_images.size())) ? m_images.at(index) : nullptr;
 }
 
 std::wstring DIP::Thumbs::path() const
